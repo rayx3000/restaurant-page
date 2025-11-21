@@ -48,7 +48,7 @@ nav button:active{
 }
 
 #content{
-    padding: 0.88%;
+    padding: 1%;
 }
 
 #content h1{
@@ -65,4 +65,79 @@ nav button:active{
 .home-page img{
     width: 620px;
     border-radius: 20%;
+}
+
+.menu-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 55px;
+    padding-bottom: 0.8%;
+}
+
+.food{
+    background: #5e81cc;
+    background: radial-gradient(circle, rgba(94, 129, 204, 0.35) 0%, rgba(36, 175, 255, 0.88) 100%);
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    border-radius: 12.5%;
+    transition: transform 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+.food:hover{
+    transform: scale(1.02);
+}
+
+.food figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.food figure img{
+    width: 238px;
+    border-radius: 38%;
+}
+
+figcaption{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+#price{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+
+#order{
+    background: #7ec4e0;
+    background: radial-gradient(circle, rgba(126, 196, 224, 0.32) 0%, rgba(36, 79, 237, 1) 100%);
+    border: none;
+    font-family: "Bruno Ace", sans-serif;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#order:hover{
+    color: #7ec4e0;
+    background-color: #303030;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#order:active{
+    transform: scale(0.9);
 }
