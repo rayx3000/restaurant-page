@@ -1,4 +1,4 @@
-class Food{
+export class Food{
     constructor(name, id, price){
         this.name = name;
         this.id = id;
@@ -6,7 +6,7 @@ class Food{
     }
 }
 
-const menu = [
+export const menu = [
     new Food("Nigri Sushi", "nigri-sushi", 150),
     new Food("Chicken Curry", "chicken-curry", 175),
     new Food("Lechon Kawali", "lechon-kawali", 280),
@@ -21,7 +21,7 @@ const menu = [
     new Food("Nasi Goreng", "nasi-goreng", 155)
 ];
 
-let foods = ""
+export let foods = ""
 
 menu.forEach((food) => {
     foods += `<div class="food">
@@ -34,11 +34,9 @@ menu.forEach((food) => {
              </div>`
 });
 
-const menuPage = `
+export const menuPage = `
     <div class="menu-page">
         <h1>Our Menu</h1>
         <div class="menu-grid"></div>
     </div>
 `
-
-document.querySelector(".menu-grid").innerHTML = foods;
