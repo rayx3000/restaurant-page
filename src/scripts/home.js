@@ -1,6 +1,6 @@
 import restaurant from '../assets/restaurant.png'
 
-const home = `
+const homePage = `
     <div class="home-page">
         <img src=${restaurant} alt="restaurant">
         <h1>Welcome To Rayx Resto</h1>
