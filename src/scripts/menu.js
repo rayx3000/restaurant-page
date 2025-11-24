@@ -26,7 +26,7 @@ export let foods = ""
 menu.forEach((food) => {
     foods += `<div class="food">
                 <figure>
-                    <img src="assets/${food.id}.png" alt="${food.id.replace("-", " ")}">
+                    <img src="./assets/${food.id}.png" alt="${food.id.replace("-", " ")}">
                     <figcaption>${food.name}</figcaption>
                 </figure>
                 <p id="price">PHP ${food.price}</p>
@@ -37,6 +37,6 @@ menu.forEach((food) => {
 export const menuPage = `
     <div class="menu-page">
         <h1>Our Menu</h1>
-        <div class="menu-grid"></div>
+        <div class="menu-grid">${foods}</div>
     </div>
 `
