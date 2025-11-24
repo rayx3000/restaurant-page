@@ -2,25 +2,30 @@ import "./styles.css";
 import { homePage } from "./scripts/home";
 import { menuPage } from "./scripts/menu";
 import { aboutPage } from "./scripts/about";
-
-const homeButton = document.getElementById("home");
-const menuButton = document.getElementById("menu");
-const aboutButton = document.getElementById("about");
+import { updateNav } from "./scripts/resize";
 
 const content = document.getElementById("content");
 
 content.innerHTML = homePage;
 
-homeButton.addEventListener("click", () => {
-    content.innerHTML = homePage;
+
+document.addEventListener("click", (e) => {
+
+    if (e.target.id === "home") {
+        content.innerHTML = homePage;
+    }
+
+    if (e.target.id === "menu") {
+        content.innerHTML = menuPage;
+    }
+
+    if (e.target.id === "about") {
+        content.innerHTML = aboutPage;
+    }
 });
 
-menuButton.addEventListener('click', () => {
-    content.innerHTML = menuPage;
-});
+document.addEventListener("DOMContentLoaded", updateNav);
 
-aboutButton.addEventListener("click", () => {
-    content.innerHTML = aboutPage;
-});
+window.addEventListener('resize', updateNav);
 
 console.log("Hi");
