@@ -171,3 +171,61 @@ address p{
 address:hover{
     transform: scale(1.05);
 }
+
+@media(max-width: 1050px) {
+    body{
+        font-size: 0.9em;
+    }
+
+    .food figure img{
+        width: 175px;
+    }
+
+    button{
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width: 780px) {
+    .home-page img{
+        width: 480px;
+    }
+
+    .menu-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .food{
+        width: 35vw;
+    }
+}
+
+@media(max-width: 625px) {
+    .food{
+        width: 40vw;
+    }
+}
+
+@media(max-width: 550px){
+    body{
+        font-size: 0.78em;
+    }
+
+    nav{
+        gap: 3.75vw;
+    }
+
+    .home-page img{
+        width: 350px;
+    }
+}
+
+@media(max-width: 480px) {
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .food{
+        width: 55vw;
+    }
+}
