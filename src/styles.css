@@ -267,4 +267,40 @@ address:hover{
     nav button:active{
         transform: none;
     }
+
+    .home-page img{
+        width: 225px;
+    }
+
+    .food{
+        width: 65vw;
+    }
+
+    .food figure img{
+        width: 132px;
+    }
+
+}
+
+@media (max-width: 275px) {
+    header h1{
+        font-size: 1.5em;
+    }
+
+    .food{
+        font-size: 0.9em;
+        width: 75vw;
+    }
+
+    .home-page{
+        font-size: 0.92em;
+    }
+
+    .about-page{
+        font-size: 0.92em;
+    }
+
+    .nav-buttons{
+        top: 8vh;
+    }
 }
